@@ -1,0 +1,41 @@
+# Example cortex.yaml for a Rust microservice
+
+service:
+  name: cortex-microservice-rust-demo     # Unique name of the microservice
+  owner: justin.reock@cortex.io    # Owner of the service
+  description: "A Rust microservice for the internal developer portal"
+  repository: https://github.com/jreock/cortex-microservice-rust-demo # Repository URL
+
+metadata:
+  type: microservice              # Type of the service
+  language: Rust                  # Primary programming language used
+  # Rust microservices might not specify a framework like Flask in Python
+
+dependencies:
+  - name: database                # Dependency name
+    type: postgres                # Type of the dependency (e.g., database, service)
+    version: ">=9.6"              # Version constraint
+
+  - name: redis-cache
+    type: cache
+    version: ">=6.0"
+
+resources:
+  cpu: 1                          # CPU resources allocated
+  memory: 512MB                   # Memory resources allocated
+
+# Environment specific configurations
+environments:
+  production:
+    url: https://prod.example-rust-service.com   # Service URL in production
+    resources:
+      cpu: 2                                     # Overridden CPU resources for production
+      memory: 1GB                                # Overridden memory resources for production
+
+  staging:
+    url: https://staging.example-rust-service.com
+    resources:
+      cpu: 1
+      memory: 512MB
+
+# Additional configuration may include monitoring, logging, CI/CD pipeline settings, etc.
