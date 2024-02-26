@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cortex-microservice-rust-demo-deployment
+  labels:
+    app: cortex-microservice-rust-demo
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: cortex-microservice-rust-demo
+  template:
+    metadata:
+      labels:
+        app: cortex-microservice-rust-demo
+    spec:
+      containers:
+      - name: cortex-microservice-rust-demo
+        image: cortex-microservice-rust-demo:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8000
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: cortex-microservice-rust-demo-service
+spec:
+  selector:
+    app: cortex-microservice-rust-demo
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000
+      nodePort: 30000
+  type: NodePort
