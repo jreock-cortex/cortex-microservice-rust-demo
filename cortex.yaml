@@ -4,7 +4,6 @@ info:
   description: This is a demo of a Rust microservice orchestrated through the Cortex portal.
   x-cortex-tag: cortex-microservice-rust-demo
   x-cortex-type: service
-      memory: 512MBx-cortex-git:
   github:
     repository: jreock/cortex-microservice-rust-demo
     alias: rust-demo # optional
