@@ -15,5 +15,5 @@ spec:
   lifecycle: experimental
   owner: guests
   dependsOn:
-    - resource:default/microservice-db
+    - resource:microservice-db
   implementsApis: []
