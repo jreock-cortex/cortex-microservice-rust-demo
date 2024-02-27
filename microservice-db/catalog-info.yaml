@@ -9,6 +9,4 @@ spec:
   type: resource
   lifecycle: experimental
   owner: guests
-  providesApis:
-    - microservice-db
   implementsApis: []
