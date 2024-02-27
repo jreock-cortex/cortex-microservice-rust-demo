@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: backstage-microservice-rust-demo
-  description: "This is a demo of a Rust microservice orchestrated through the Backstage portal."
+  description: "This is a tech demo of a Rust microservice orchestrated through the Backstage portal."
   tags:
   - migrate-to-cortex
 spec:
