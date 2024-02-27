@@ -16,6 +16,4 @@ spec:
   owner: guests
   dependsOn:
     - resource:default/microservice-db
-  providesApis:
-    - rust-demo-api
   implementsApis: []
