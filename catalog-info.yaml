@@ -5,6 +5,11 @@ metadata:
   description: "This is a tech demo of a Rust microservice orchestrated through the Backstage portal."
   tags:
   - migrate-to-cortex
+  links:
+  - url: https://github.com/jreock-cortex/cortex-microservice-rust-demo/pulse
+    title: Build Dashboard
+    icon: dashboard
+    
 spec:
   type: service
   lifecycle: experimental
