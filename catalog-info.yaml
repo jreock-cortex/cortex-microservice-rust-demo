@@ -9,4 +9,8 @@ spec:
   type: service
   lifecycle: experimental
   owner: jreock
+  dependsOn:
+    - resource:default/microservice-db
+  providesApis:
+    - rust-demo-api
   implementsApis: []
