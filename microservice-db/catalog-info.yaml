@@ -6,7 +6,7 @@ metadata:
   tags:
   - migrate-to-cortex
 spec:
-  type: library
+  type: resource
   lifecycle: experimental
   owner: guests
   implementsApis: []
