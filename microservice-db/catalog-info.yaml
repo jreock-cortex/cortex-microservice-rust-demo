@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: rust-api-demo
+  description: "This is a demo of a dependency to the cortex-microservice-rust-demo project in Backstage."
+  tags:
+  - migrate-to-cortex
+spec:
+  type: library
+  lifecycle: experimental
+  owner: guests
+  implementsApis: []
