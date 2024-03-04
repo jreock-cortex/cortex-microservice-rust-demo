@@ -9,7 +9,7 @@ metadata:
     - microservice
   annotations:
     # Link to the TechDocs site for this component
-    backstage.io/techdocs-ref: url:https://github.com/jreock-cortex/cortex-microservice-rust-demo/blob/main/README.md
+    backstage.io/techdocs-ref: dir:./docs
   links:
     - url: https://github.com/jreock-cortex/cortex-microservice-rust-demo/pulse
       title: Build Dashboard

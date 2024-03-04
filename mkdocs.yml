@@ -1,0 +1,7 @@
+site_name: 'Backstage Microservice Rust Demo'
+
+nav:
+  - Home: 'README.md'
+
+plugins:
+  - techdocs-core
