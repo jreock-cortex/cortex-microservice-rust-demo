@@ -2,14 +2,37 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: backstage-microservice-rust-demo
-  description: "This is a tech demo of a Rust microservice orchestrated through the Backstage portal."
+  description: "This tech demo showcases a Rust microservice, demonstrating best practices in development, orchestration, and monitoring, all integrated within the Backstage portal."
   tags:
-  - migrate-to-cortex
+    - migrate-to-cortex
+    - rust
+    - microservice
   links:
-  - url: https://github.com/jreock-cortex/cortex-microservice-rust-demo/pulse
-    title: Build Dashboard
-    icon: dashboard
-    
+    - url: https://github.com/jreock-cortex/cortex-microservice-rust-demo/pulse
+      title: Build Dashboard
+      icon: dashboard
+    - url: https://docs.example.com/backstage-microservice-rust-demo/getting-started
+      title: Getting Started Guide
+      icon: documentation
+    - url: https://example.com/runbook/backstage-microservice-rust-demo
+      title: Operational Runbook
+      icon: book
+    - url: https://monitoring.example.com/dashboard/backstage-microservice-rust-demo
+      title: Monitoring Dashboard
+      icon: graph
+    - url: https://api.example.com/swagger-ui/backstage-microservice-rust-demo
+      title: API Documentation
+      icon: api
+    - url: https://chat.example.com/teams/backstage-microservice-rust-demo
+      title: Team Chat Room
+      icon: chat
+    - url: https://ci.example.com/builds/backstage-microservice-rust-demo
+      title: CI Pipeline Status
+      icon: ci
+    - url: https://security.example.com/vulnerability-report/backstage-microservice-rust-demo
+      title: Vulnerability Report
+      icon: security
+
 spec:
   type: service
   lifecycle: experimental
@@ -17,3 +40,20 @@ spec:
   dependsOn:
     - component:microservice-db
   implementsApis: []
+  documentation:
+    - title: Architecture Overview
+      url: https://docs.example.com/backstage-microservice-rust-demo/architecture
+    - title: Environment Setup
+      url: https://docs.example.com/backstage-microservice-rust-demo/environment-setup
+  support:
+    - title: Support Slack Channel
+      url: https://chat.example.com/channels/backstage-support
+    - title: Email Support
+      url: mailto:support@example.com
+  technology:
+    - name: Rust
+      version: 1.50
+      description: "The programming language used for development."
+    - name: Docker
+      version: 20.10
+      description: "Containerization platform used for deployment."
