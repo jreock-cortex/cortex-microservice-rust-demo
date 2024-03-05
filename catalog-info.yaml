@@ -7,8 +7,8 @@ metadata:
     - migrate-to-cortex
     - rust
     - microservice
-annotations:
-  github.com/project-slug: jreock-cortex/cortex-microservice-rust-demo
+  annotations:
+    github.com/project-slug: jreock-cortex/cortex-microservice-rust-demo
  #annotations:
     # Link to the TechDocs site for this component
     #backstage.io/techdocs-ref: dir:./docs
