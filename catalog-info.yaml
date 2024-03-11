@@ -3,15 +3,15 @@ kind: Component
 metadata:
   name: backstage-microservice-rust-demo
   description: "This tech demo showcases a Rust microservice, demonstrating best practices in development, orchestration, and monitoring, all integrated within the Backstage portal."
+  annotations:
+    github.com/project-slug: jreock-cortex/cortex-microservice-rust-demo
+    x-cortex-git: jreock-cortex/cortex-microservice-rust-demo
+    x-cortex-tag: guests/backstage-microservice-rust-demo
+    x-cortex-type: service
   tags:
     - migrate-to-cortex
     - rust
     - microservice
-  annotations:
-    github.com/project-slug: jreock-cortex/cortex-microservice-rust-demo
- #annotations:
-    # Link to the TechDocs site for this component
-    #backstage.io/techdocs-ref: dir:./docs
   links:
     - url: https://github.com/jreock-cortex/cortex-microservice-rust-demo/pulse
       title: Build Dashboard
@@ -37,6 +37,15 @@ metadata:
     - url: https://security.example.com/vulnerability-report/backstage-microservice-rust-demo
       title: Vulnerability Report
       icon: security
+  x-cortex-link: 
+    - Build Dashboard: https://github.com/jreock-cortex/cortex-microservice-rust-demo/pulse
+    - Getting Started Guide: https://docs.example.com/backstage-microservice-rust-demo/getting-started
+    - Operational Runbook: https://example.com/runbook/backstage-microservice-rust-demo
+    - Monitoring Dashboard: https://monitoring.example.com/dashboard/backstage-microservice-rust-demo
+    - API Documentation: https://api.example.com/swagger-ui/backstage-microservice-rust-demo
+    - Team Chat Room: https://chat.example.com/teams/backstage-microservice-rust-demo
+    - CI Pipeline Status: https://ci.example.com/builds/backstage-microservice-rust-demo
+    - Vulnerability Report: https://security.example.com/vulnerability-report/backstage-microservice-rust-demo
 
 spec:
   type: service
@@ -61,4 +70,10 @@ spec:
       description: "The programming language used for development."
     - name: Docker
       version: 20.10
-      description: "Containerization platform used for deployment."
+      description: "Containerization platform used for deployment." 
+  x-cortex-owners: guests
+  x-cortex-children: microservice-db
+  x-cortex-groups:
+    - migrate-to-cortex
+    - rust
+    - microservice
