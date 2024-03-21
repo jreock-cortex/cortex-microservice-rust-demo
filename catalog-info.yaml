@@ -71,7 +71,10 @@ spec:
     - name: Docker
       version: 20.10
       description: "Containerization platform used for deployment." 
-  x-cortex-owners: guests
+  x-cortex-owners:
+    - name: guests
+      type: GROUP
+      provider: CORTEX
   x-cortex-children: microservice-db
   x-cortex-groups:
     - migrate-to-cortex
