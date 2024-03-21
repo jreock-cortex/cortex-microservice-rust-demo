@@ -4,7 +4,7 @@ metadata:
   name: microservice-db
   description: "This backend database service acts as a foundational dependency for the cortex-microservice-rust-demo project, demonstrating best practices in database management, security, and scalability."
   annotations:
-    github.com/project-slug: jreock-cortex/cortex-microservice-rust-demo/tree/main/microservice-db
+    backstage.io/source-location: url:https://github.com/jreock-cortex/cortex-microservice-rust-demo/tree/main/microservice-db
     x-cortex-git: jreock-cortex/cortex-microservice-rust-demo/tree/main/microservice-db
   tags:
     - migrate-to-cortex
