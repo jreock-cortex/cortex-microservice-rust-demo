@@ -16,15 +16,19 @@ metadata:
     - url: https://github.com/jreock-cortex/cortex-microservice-rust-demo/pulse
       title: Build Dashboard
       icon: dashboard
+      type: dashboard
     - url: https://docs.example.com/backstage-microservice-rust-demo/getting-started
       title: Getting Started Guide
       icon: documentation
+      type: runbook
     - url: https://example.com/runbook/backstage-microservice-rust-demo
       title: Operational Runbook
       icon: book
+      type: runbook
     - url: https://monitoring.example.com/dashboard/backstage-microservice-rust-demo
       title: Monitoring Dashboard
       icon: graph
+      type: dashboard
     - url: https://api.example.com/swagger-ui/backstage-microservice-rust-demo
       title: API Documentation
       icon: api
