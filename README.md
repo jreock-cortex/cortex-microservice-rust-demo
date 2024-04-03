@@ -25,9 +25,9 @@ This Rust microservice is designed as a lightweight, efficient, and highly scala
 ### Setup
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/jreock-cortex/cortex-microservice-rust-demo.git
-   cd cortex-microservice-rust-demo```
+```bash
+git clone https://github.com/jreock-cortex/cortex-microservice-rust-demo.git
+cd cortex-microservice-rust-demo```
 
 2. Build the project:
 ```bash
