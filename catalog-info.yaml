@@ -73,7 +73,7 @@ spec:
       description: "Containerization platform used for deployment." 
   x-cortex-owners:
     - name: guests
-      type: GROUP
+      type: group
       provider: CORTEX
   x-cortex-children: microservice-db
   x-cortex-groups:
