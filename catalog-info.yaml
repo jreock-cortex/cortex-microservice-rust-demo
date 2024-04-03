@@ -72,9 +72,10 @@ spec:
       version: 20.10
       description: "Containerization platform used for deployment." 
   x-cortex-owners:
-    - name: guest
-      type: user
-      provider: CORTEX
+  - name: Justin
+    email: justin.reock@cortex.io
+    type: email
+    provider: CORTEX
   x-cortex-children: microservice-db
   x-cortex-groups:
     - migrate-to-cortex
