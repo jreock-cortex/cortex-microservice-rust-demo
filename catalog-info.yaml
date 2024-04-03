@@ -50,7 +50,7 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: guests
+  owner: guest
   dependsOn:
     - component:microservice-db
   implementsApis: []
