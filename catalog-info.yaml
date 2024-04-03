@@ -72,8 +72,8 @@ spec:
       version: 20.10
       description: "Containerization platform used for deployment." 
   x-cortex-owners:
-    - name: guests
-      type: group
+    - name: guest
+      type: user
       provider: CORTEX
   x-cortex-children: microservice-db
   x-cortex-groups:
