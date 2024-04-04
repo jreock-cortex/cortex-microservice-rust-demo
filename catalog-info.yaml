@@ -77,8 +77,7 @@ spec:
       description: "Containerization platform used for deployment." 
   x-cortex-owners:
   - name: Justin
-    email: justin.reock@cortex.io
-    type: email
+    type: group
     provider: CORTEX
   x-cortex-children: microservice-db
   x-cortex-groups:
